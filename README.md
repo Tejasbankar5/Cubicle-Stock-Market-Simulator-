@@ -1,79 +1,105 @@
-📈 Cubicle – Stock Market Simulator
+# 📈 Cubicle – Stock Market Simulator
 
-Cubicle is a Python Tkinter–based stock trading simulation game where players can practice buying and selling virtual stocks, experience price fluctuations, learn risk management, and try to maximize profit within a limited number of days.
-The system also stores player results in a MySQL database.
+Cubicle is a **Python Tkinter–based stock market simulation game** where users can experience real-like trading using virtual money. Players buy and sell stocks, face random price fluctuations, manage risk, and try to maximize profit within a limited number of days.
+The application also stores player results in a **MySQL database**.
 
-🎮 Features
+---
 
-🎯 Starting balance of $1000
+## 🎮 Features
 
-⏳ User selects number of gameplay days
+* 💰 Starting balance: **$1000**
+* ⏳ User-defined gameplay duration (Days)
+* 💹 Random stock price changes every day
+* 🛒 Buy & Sell multiple popular stocks
+* 📊 Inventory management with live updates
+* ⚠️ Smart alerts (warnings & confirmations)
+* 🏁 Final performance summary + achievements screen
+* 🗄 Stores player data in MySQL:
 
-💹 Random stock price fluctuations daily
+  * Player Name
+  * Days Played
+  * Final Money
 
-🛒 Buy & Sell real-world inspired stocks (Bitcoin, Apple, Tesla, Google, etc.)
+---
 
-📊 Track inventory and profits
+## 🛠 Tech Stack
 
-⚠️ Warnings & confirmations to prevent mistakes
+* **Python**
+* **Tkinter** – GUI
+* **Pillow** – Images
+* **MySQL** – Data storage
+* **Random Module** – Stock price variation
 
-🏁 Final acknowledgement screen with results & learning outcomes
+---
 
-🗄 Saves Player Name, Days Played & Final Money to MySQL
+## 📁 Project Flow
 
-🛠 Tech Stack
+1️⃣ User enters **Name** and **Days to Play**
+2️⃣ Reads instructions
+3️⃣ Starts simulator
+4️⃣ Each day:
 
-Python
+* Stock prices refresh
+* Player buys/sells
+* Balance & inventory update
 
-Tkinter – GUI
+5️⃣ Game ends → Final summary shown
+6️⃣ Results saved to database
 
-Pillow – Image Support
+---
 
-MySQL – Result Storage
+## 🗄 Database Requirement
 
-Random Module – Price Variations
+Create a database (example):
 
-📂 Database
+```
+database name: mms
+table: person(Name, Days, Money)
+```
 
-Stores:
+---
 
-Player Name
+## ▶️ How to Run
 
-Days Played
+### Install Dependencies
 
-Final Money
-
-Table example:
-
-person(Name, Days, Money)
-
-▶️ How to Run
-
-1️⃣ Install required packages
-
+```
 pip install pillow mysql-connector-python
+```
 
+### Configure MySQL
 
-2️⃣ Configure your MySQL credentials in code:
+Update in code:
 
+```
 host='localhost'
 user='root'
-password='yourpassword'
+password='your_password'
 database='mms'
+```
 
+### Run Program
 
-3️⃣ Run the program
-
+```
 python main.py
+```
 
-🔮 Future Enhancements
+---
 
-Live stock price API
+## 🔮 Future Enhancements
 
-Leaderboard
+* Live stock market API integration
+* Leaderboard
+* Graph analytics
+* Difficulty levels
+* Sound effects & animations
 
-Graph analytics
+---
 
-Difficulty modes
+## 🙌 Credits
 
-Sound and animation effects
+Developed as a stock trading learning simulator to help users understand:
+Investment Strategies, Risk vs Reward, Budget Management, Market Volatility, and Economic Literacy.
+
+---
+
